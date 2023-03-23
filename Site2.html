@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+	* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+}
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v23-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/montserrat-v23-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/montserrat-v23-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/montserrat-v23-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/montserrat-v23-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/montserrat-v23-latin-regular.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+
+.menu {
+  height: 100px;
+  background-color: #ffffff;
+  box-shadow: 00px 4px 7px 0px #81818140;
+  display: flex;
+  justify-content: space-between;
+}
+.header {
+  padding: 0 50px;
+  height: 100px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.menu__ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+  text-decoration: none;
+  border: none;
+  padding-left: 40px;
+}
+
+.menu__link {
+  color: #000000;
+  font-weight: 300;
+  font-size: 16px;
+  margin: 0; /* Обнуляем значение отступов */
+  text-decoration: none;
+  margin: 0 10px;
+  flex-wrap: wrap;
+}
+
+.menu__link:hover {
+  color: #05a88d;
+}
+.menu__li {
+  display: flex;
+  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.menu__logo {
+  color: #05a88d;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.three {
+  color: #05a88d;
+}
+
+.menu__signup {
+  color: #05a88d;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 16px;
+  border: 1px solid #05a88d;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding: 12.5px;
+}
+
+.menu__login {
+  color: #05a88d;
+  border: none;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 16px;
+  padding-left: 69.5px;
+}	
+}
+html,body{
+    font-family: 'Exo 2', sans-serif;
+    height: 100%;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.main {
+	flex: 1 0 auto;
+}
+.footer{
+    flex: 0 0 auto;
+    background: #05A88D;
+}
+.footer__top {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #FFFFFF;
+        margin-bottom: 36px;
+        height: 174px;
+}
+.logo{
+    padding-top: 40px;
+    padding-left: 40px;
+    width: 131px;
+    height: 34px;
+    left: 40px;
+    top: 44px;
+    font-family: 'Exo2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.015em;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #F1E67D;
+}
+.text{
+    padding-top: 40px;
+    padding-left: 40px;
+    width: 437px;
+    height: 46px;
+    left: 40px;
+    top: 100px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.015em;
+    color: #FFFFFF;
+}
+.contact{
+    padding-top: 58px;
+    width: 160px;
+    height: 17px;
+    left: 1241px;
+    top: 58px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.phone{
+    padding-top: 16px;
+    text-decoration: none;
+    width: 226px;
+    height: 30px;
+    left: 1186px;
+    top: 91px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+    color: #F1E67D;
+}
+.address{
+    width: 189px;
+    height: 21px;
+    left: 1213px;
+    top: 137px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.015em;
+    color: #FFFFFF;
+}
+.footer__bottom{
+    padding: 22px;
+    width: 198px;
+    height: 14px;
+    left: 40px;
+    top: 210px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.015em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="menu">
+            <ul class="menu__ul">
+            	<li class="menu__li"><a href="#" class="menu__link">Products</a></li> 
+            	<li class="menu__li"><a href="#" class="menu__link">About</a></li>   
+            	<li class="menu__li"><a href="#" class="menu__link">Blog</a></li>   
+            	<li class="menu__li"><a href="#" class="menu__link">Contacts</a></li>
+		<a href="index.html" class="menu__logo">MYCOMPANY</a>
+	    	<a href="#" class="menu__signup">Sign Up</a>
+                <a href="#" class="menu__login">Login</a>   
+            </ul>
+        </nav>
+    </header>  
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=family=Exo+2:wght@300&Caveat&family=Montserrat:ital@1&display=swap" rel="stylesheet">
+
+    <div class="container">
+        <div class="card">
+            <div class="card__image">
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYyOTkxOTcyNg&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600" alt="Sea">
+            </div>
+             <div class="card__content">
+                 <div class="card__title">Wildsee, Italy</div>
+                     <div class="card__text">ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                     </div>
+                  <button class="card__btn">BOOKING</button>
+                </div>
+            </div>    
+    </div>
+    <div class="wrapper">
+        <main class="main"></main>
+        <footer class="footer">
+            <div class="footer__top">
+		 <div class="footer__left">
+		     <a href="#" class="logo">COMPANY</a>
+		     <div class="text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+		 </div>
+		 <div class="footer__right">
+		     <div class="contact"><p>Как с нами связаться</p></div>
+		     <a href="+7 (495) 000-00-00" class="phone">+7 (495) 000-00-00</a>
+		     <div class="address"><p>Москва, ул. Московская, д. 2, стр. 1 </p></div>
+		 </div>
+	    </div>
+	    <div class="footer__bottom"><p>© 2021 COMPANY All Rights Reserved.</p></div>
+        </footer>
+    </div>
+</body>
+</html>
+
